@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+import 'Paginas/Ejer1.dart';
+import 'Paginas/Ejer2.dart';
+import 'Paginas/Ejer3.dart';
+import 'Paginas/Ejer4.dart';
+import 'Paginas/Ejer5.dart';
+import 'Paginas/Ejer6.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -58,42 +65,51 @@ class HomePage extends StatelessWidget {
               leading: Icon(Icons.done_outline),
               title: Text('Ejercicio Nº1'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Ejer1()),
+                );
               },
             ),
             ListTile(
               leading: Icon(Icons.done_outline),
               title: Text('Ejercicio Nº2'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Ejer2()),
+                );
               },
             ),
             ListTile(
               leading: Icon(Icons.done_outline),
               title: Text('Ejercicio Nº3'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Ejer3()),
+                );
               },
             ),
             ListTile(
               leading: Icon(Icons.done_outline),
               title: Text('Ejercicio Nº4'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Ejer4()),
+                );
               },
             ),
             ListTile(
               leading: Icon(Icons.done_outline),
               title: Text('Ejercicio Nº5'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Ejer5()),
+                );
               },
             ),
             ListTile(
               leading: Icon(Icons.done_outline),
               title: Text('Ejercicio Nº6'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Ejer6()),
+                );
+
               },
             ),
           ],
