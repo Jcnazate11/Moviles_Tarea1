@@ -6,14 +6,14 @@ class Ejer1 extends StatefulWidget {
 }
 
 class _Ejer1State extends State<Ejer1> {
-  // Controladores para leer los valores de los campos de texto
+
   final TextEditingController _controllerA = TextEditingController();
   final TextEditingController _controllerB = TextEditingController();
   final TextEditingController _controllerC = TextEditingController();
 
   String resultado = '';
 
-  // Método para ordenar tres números
+
   void ordenarNumeros() {
     setState(() {
       double? A = double.tryParse(_controllerA.text);
@@ -29,7 +29,7 @@ class _Ejer1State extends State<Ejer1> {
         resultado = 'Los números son iguales: $A, $B, $C';
       } else {
         List<double> numeros = [A, B, C];
-        numeros.sort(); 
+        numeros.sort();
         resultado = 'El orden  es: ${numeros[0]}, ${numeros[1]}, ${numeros[2]}';
       }
     });
