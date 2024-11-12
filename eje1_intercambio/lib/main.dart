@@ -8,7 +8,8 @@ import 'Paginas/Ejer6.dart';
 
 
 void main() {
-  runApp(MyApp());
+  runApp(MyApp(),
+    );
 }
 
 class MyApp extends StatelessWidget {
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(),
+        debugShowCheckedModeBanner : false
     );
   }
 }

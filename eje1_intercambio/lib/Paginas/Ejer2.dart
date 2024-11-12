@@ -27,14 +27,14 @@ class _Ejer2State extends State<Ejer2> {
       return;
     }
 
-    const double precioCamisetaMenor3 = 4000;
-    const double precioCamisetaMayor3 = 4800;
+    const double precioCamisetaMenor3 = 4800;
+    const double precioCamisetaMayor3 = 4000;
     double precioTotal = 0;
 
     if (camisetas <= 3) {
       precioTotal = camisetas * precioCamisetaMenor3;
     } else {
-      precioTotal = (3 * precioCamisetaMenor3) + ((camisetas - 3) * precioCamisetaMayor3);
+      precioTotal = (camisetas ) * precioCamisetaMayor3;
     }
     setState(() {
       _resultado = 'El precio total de la compra es: \$${precioTotal.toStringAsFixed(2)}';
